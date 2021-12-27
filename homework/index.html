@@ -7,8 +7,42 @@
     <title>Homework #1</title>
 </head>
 <body>
-    <hr />
-    <div>
+  <style>
+    .table tr td{
+      width: 100%;
+      border: none;
+  }
+    .orange {
+      margin-top: 10px;
+      width: 700px;
+      border-collapse: collapse;
+      border-top: 5px solid salmon;
+  }
+    .orange tr, th, td {
+      border: 1px solid salmon;
+      border-left: none;
+      padding: 15px;
+  }
+   .orange td {
+      text-align: center;
+  }
+     .orange caption {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: left;
+  }
+  </style>
+  <table class="table">
+    <tr>
+      <td>
+       <img src="./source/logo-black.png" alt="">
+      </td>
+      <td align="right">DECEMBER 2021</td>
+    </tr>
+  </table>
+  <img src="./source/human.png" alt="">
+  <div>
       <h1>CHOOSE FLUTTER TO CHOOSE BOTH</h1>
       <button>REGISTER</button>
     </div>
@@ -46,6 +80,44 @@
     </div>
     <div>
       <h2>WHO</h2>
+      <table class="orange">
+        <caption>Цены на флагманские модели iPhone и Xiaomi</caption>
+        <tbody>
+          <tr>
+            <th align="left">Производитель</th>
+              <th>Модель</th>
+              <th>Цена</th>
+            </tr>
+            <tr>
+              <td rowspan="3">iPhone</td>
+              <td>12 pro</td>
+              <td>$999</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>$799</td>
+            </tr>
+            <tr>
+              <td>12 mini</td>
+              <td>$699</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Xiaomi</td>
+              <td>Mi 10</td>
+              <td>$768</td>
+            </tr>
+            <tr>
+              <td>Black shark 3 128 gb</td>
+              <td>$529</td>
+            </tr>
+            <tfoot>
+                <tr>
+                  <th colspan="2" align="left">Средняя цена:</th>
+                  <td>$758.8</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>  
       <button>Register</button>
     </div>
     <div>
